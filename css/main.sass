@@ -1,6 +1,6 @@
 //
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300400500600700&display=swap')
 @import "mixin/hover/hover.sass"
 @import "mixin/flex.sass"
 
@@ -18,11 +18,54 @@ body,p,a,span,h1,h2,h3,h4,h5,h6,button
   font-family: 'Poppins', sans-serif
 
 .container
-  width: 1103px
+  max-width: 1100px
   padding-left: 15px
   padding-right: 15px
   margin: 0 auto
 
 .navigation
   @include flexbox
-  background: red
+  justify-content: space-around
+  height: 83px
+  .logo
+    align-self: center
+    h1
+      color: #22262a
+      font-size: 28px
+      font-weight: bold
+      text-transform: uppercase
+  nav
+    align-self: center
+    a
+      color: #22262a
+      font-size: 18px
+      font-weight: 400
+      text-transform: uppercase
+      text-decoration: none
+      margin-right: 30px
+      &:last-child
+        margin-right: 0
+  .navigation__menu
+    align-self: center
+    button
+      background-color: transparent
+      cursor: pointer
+      margin-right: 16px
+      &:last-child
+        margin-right: 0
+    i
+      font-style: normal
+      font-weight: 700
+      font-size: 18px
+      line-height: 18px
+      color: #22262A
+
+
+
+
+
+
+
+
+
+//
